@@ -4,6 +4,18 @@ const webpack = require("webpack")
 module.exports = {
   mode: "production",
   devtool: "source-map",
+  module: {
+    rules: [
+      // Other rules...
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+    ],
+  },
   entry: {
     application: "./app/javascript/application.js"
   },
@@ -17,4 +29,5 @@ module.exports = {
       maxChunks: 1
     })
   ]
+
 }
