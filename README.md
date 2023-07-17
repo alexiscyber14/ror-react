@@ -1,7 +1,3 @@
-<a name="readme-top"></a>
-
-
-
 <div align="center">
   <h3><b>Hello  Rails react</b></h3>
 </div>
